@@ -31,7 +31,7 @@ Estado: **propuesta, no aprobada**. Separa lo acordado de mis recomendaciones.
 | Conversación con el agente | Base de datos de la app | Monday no es para chats; permite retomar y auditar. |
 | Borrador de la solicitud | Base de datos de la app | Un borrador no debe aparecer en el tablero del equipo. |
 | Solicitud confirmada | **Monday** (y copia de respaldo en la app) | Monday es la plataforma operativa del equipo. |
-| Estado (Recibida / Agendada / Entrega en revisión / Entrega definitiva) y aprobación | **Solo Monday** | El equipo lo cambia ahí. La app lo lee, nunca lo decide. |
+| Estado (Recibida / Agendada / Entrega en revisión / Entrega definitiva) y aprobación | **Solo Monday** | El equipo cambia el estado ahí; la IA nunca lo decide. Única excepción: cuando el solicitante presiona «Apruebo», la app registra la aprobación y cierra la solicitud en Monday. |
 | Productos, responsables, entregables | **Monday** | Trabajo interno del equipo. |
 | Envíos pendientes a Monday o Gmail | Base de datos de la app | Si Monday o Gmail fallan, la solicitud no se pierde y se reintenta. |
 
