@@ -56,6 +56,8 @@ No se ha modificado nada en Monday.
 - 2026-10-09 — Uso esperado: bajo, interno de la Fundación (no masivo).
 - 2026-10-09 — Solo el equipo de Comunicaciones tiene acceso a Claude. Los trabajadores solicitantes no tienen cuenta de Claude.
   → Consecuencia: el **agente de recepción** no puede vivir dentro de Claude; debe ser una aplicación propia con conexión a un servicio de IA mediante API (cuenta de prepago con límite de gasto).
+- 2026-10-09 — La cuenta de IA se resuelve más adelante, cuando sea necesaria. Mientras tanto se construye sin IA conectada (sin simular un agente).
+- 2026-10-09 — **Obligatorios para enviar:** nombre, correo, área, título y «qué necesita comunicar». El resto puede quedar pendiente o no aplicar. Si aparecen otros obligatorios, se conversan.
 
 ## 5. Recomendaciones aún no aprobadas
 

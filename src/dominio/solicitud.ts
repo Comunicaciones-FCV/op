@@ -23,7 +23,7 @@ export const adjunto = z.object({
   url: z.string().url(),
 });
 
-// Clasificación propuesta (pendiente de aprobación de José):
+// Clasificación aprobada por José el 2026-10-09:
 //   identificación  → se exige para enviar.
 //   comprensión     → «qué comunicar» se exige; objetivo y público pueden quedar pendientes.
 //   condicional     → solo si hay una actividad (fecha, horario, lugar).

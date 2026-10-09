@@ -67,4 +67,4 @@ Estado: **propuesta, no aprobada**. Separa lo acordado de mis recomendaciones.
 
 - `src/dominio/pauta.ts`: regla de corte jueves 18:00 en hora de Chile → viernes de pauta. 10 pruebas, incluidos cambio de horario invierno/verano y diferencia con la hora UTC.
 - `src/dominio/estados.ts`: Recibida → Agendada → Entregada; solo Comunicaciones cambia; Agendada exige rango; Entregada exige entregables y confirmación manual.
-- `src/dominio/solicitud.ts`: ficha de la solicitud con campos *informado / pendiente / no aplica* y lo mínimo para enviar (clasificación propuesta, por aprobar).
+- `src/dominio/solicitud.ts`: ficha de la solicitud con campos *informado / pendiente / no aplica* y lo mínimo para enviar (clasificación aprobada el 2026-10-09).
