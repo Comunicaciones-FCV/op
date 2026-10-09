@@ -71,6 +71,9 @@ No se ha modificado nada en Monday.
 - 2026-10-09 — **Fotos y archivos se suben directo en el chat.** Al confirmar, se envían a la columna «Archivos y antecedentes» de Monday. Mientras la solicitud es borrador, la app los guarda temporalmente. Los enlaces (p. ej. Drive) siguen siendo aceptados como antecedente.
   → Pendiente: límites de tamaño y cantidad; dónde se guardan temporalmente (depende del alojamiento).
 
+- 2026-10-09 — **Se mantiene la aprobación del solicitante.** Marca el éxito de la orden de producción (columna «Aprobación final» de Monday: Pendiente / Aprobada).
+  → Pendiente: si existe una primera versión para comentarios antes de la entrega definitiva (define si son 3 o 4 estados).
+
 ## Recursos de marca verificados
 
 - Logo horizontal a color (`public/marca/fcv-logo-horizontal-color-fondo-transparente.png`, 1000×292, descargado de Drive el 2026-10-09). Muestra panes y peces (no corazones); los corazones 💙🤍💛 aparecen en la firma de WhatsApp.
