@@ -51,6 +51,15 @@ export const borradorDeSolicitud = z.object({
   antecedentes: valorDeCampo.optional(),
   contacto: valorDeCampo.optional(),
   adjuntos: z.array(adjunto).default([]),
+  // Cuña: frase textual de alguien del equipo, con nombre y rol (pauta de corresponsales).
+  // La entrega la persona; la IA nunca la redacta.
+  cuna: z
+    .object({
+      texto: z.string().trim().min(1),
+      nombre: z.string().trim().optional(),
+      rol: z.string().trim().optional(),
+    })
+    .optional(),
   // Fecha en que el solicitante necesita disponer de la comunicación o los materiales.
   // Es distinta de la fecha de la actividad y de la estimación que define Comunicaciones.
   fechaRequerida: valorDeCampo.optional(),

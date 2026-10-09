@@ -65,6 +65,9 @@ No se ha modificado nada en Monday.
 
 - 2026-10-09 — **Sin pantalla «Mis solicitudes».** El solicitante se informa del avance solo por los correos (Recibida, Agendada, Entregada).
 
+- 2026-10-09 — Mensaje de bienvenida del agente aprobado (ver `docs/agente-recepcion.md`).
+- 2026-10-09 — La pauta de corresponsales («NOTICIA EN …») orienta al agente cuando se cuenta una actividad realizada. Se agrega el campo opcional **Cuña** (texto, nombre, rol), siempre aportado por la persona.
+
 ## 5. Recomendaciones aún no aprobadas
 
 - Asistente interno de Comunicaciones dentro de Claude (página publicada que consulta a Claude y lee Monday con las credenciales de cada integrante), para no sumar costo de API. Pendiente de confirmar cómo se descuenta el uso y de aprobación de José.
