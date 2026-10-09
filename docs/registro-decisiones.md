@@ -72,7 +72,12 @@ No se ha modificado nada en Monday.
   → Pendiente: límites de tamaño y cantidad; dónde se guardan temporalmente (depende del alojamiento).
 
 - 2026-10-09 — **Se mantiene la aprobación del solicitante.** Marca el éxito de la orden de producción (columna «Aprobación final» de Monday: Pendiente / Aprobada).
-  → Pendiente: si existe una primera versión para comentarios antes de la entrega definitiva (define si son 3 o 4 estados).
+- 2026-10-09 — **Cuatro estados: Recibida, Agendada, Primera entrega, Entrega definitiva.** (Reemplaza la referencia anterior de tres estados.)
+  - Puede haber varias rondas de entrega (primera, segunda…, definitiva).
+  - **Todo** correo de entrega lleva el botón «Apruebo». Al aprobar no se envía otro correo; solo se confirma en pantalla.
+  - Si un producto no necesita revisión, no hay primera entrega: se pasa directo a Entrega definitiva.
+  - El solicitante no visa entregables. Lo que envía Comunicaciones se da por visado por el equipo.
+  - Pendiente: cómo se nombra el estado durante una segunda o tercera ronda.
 
 ## Recursos de marca verificados
 
