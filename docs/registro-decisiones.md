@@ -51,6 +51,16 @@ Este documento separa lo **acordado**, lo **verificado**, lo **pendiente** y las
 
 No se ha modificado nada en Monday.
 
-## 4. Pendientes técnicos (sin decidir)
+## 4. Decisiones tomadas en este chat
+
+- 2026-10-09 — Uso esperado: bajo, interno de la Fundación (no masivo).
+- 2026-10-09 — Solo el equipo de Comunicaciones tiene acceso a Claude. Los trabajadores solicitantes no tienen cuenta de Claude.
+  → Consecuencia: el **agente de recepción** no puede vivir dentro de Claude; debe ser una aplicación propia con conexión a un servicio de IA mediante API (cuenta de prepago con límite de gasto).
+
+## 5. Recomendaciones aún no aprobadas
+
+- Asistente interno de Comunicaciones dentro de Claude (página publicada que consulta a Claude y lee Monday con las credenciales de cada integrante), para no sumar costo de API. Pendiente de confirmar cómo se descuenta el uso y de aprobación de José.
+
+## 6. Pendientes técnicos (sin decidir)
 
 Proveedor y cuenta de IA · presupuesto · hosting · base de datos · framework · proveedor de transcripción · almacenamiento de archivos · mecanismo de sincronización con Monday · acceso a Gmail · autenticación · política de acceso a solicitudes · retención de datos · feriados/excepciones de pauta · lógica de entregas parciales · catálogo de subáreas · integrantes del equipo y permisos · códigos de color.
