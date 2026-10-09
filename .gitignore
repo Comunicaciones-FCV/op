@@ -5,3 +5,11 @@ node_modules/
 dist/
 .next/
 *.log
+# Tipografía con licencia: no se publica en el repositorio (es público). Copiar desde Drive «FF Neuwelt».
+public/fuentes/
+# Datos locales del prototipo (solicitudes y archivos de prueba)
+.datos/
+next-env.d.ts
+test-results/
+capturas/
+*.tsbuildinfo

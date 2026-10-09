@@ -20,8 +20,12 @@ export type ValorDeCampo = z.infer<typeof valorDeCampo>;
 export const adjunto = z.object({
   tipo: z.enum(["archivo", "enlace"]),
   nombre: z.string(),
-  url: z.string().url(),
+  url: z.string().min(1),
+  // Archivos subidos en el chat: identificador en el almacenamiento temporal.
+  id: z.string().optional(),
+  tipoMime: z.string().optional(),
 });
+export type Adjunto = z.infer<typeof adjunto>;
 
 // Clasificación aprobada por José el 2026-10-09:
 //   identificación  → se exige para enviar.
