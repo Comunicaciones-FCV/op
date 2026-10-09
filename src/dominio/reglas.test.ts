@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { puedeCambiarEstado } from "./estados";
+import { aprobarEntrega, puedeCambiarEstado } from "./estados";
 import { borradorDeSolicitud, faltantesParaEnviar } from "./solicitud";
 
 describe("faltantesParaEnviar", () => {
@@ -37,6 +37,9 @@ describe("faltantesParaEnviar", () => {
   });
 });
 
+const entregables = [{ tipo: "enlace" as const, descripcion: "Nota web", url: "https://ejemplo.cl" }];
+const envio = { entregables, envioConfirmadoPorEquipo: true };
+
 describe("puedeCambiarEstado", () => {
   it("el solicitante no cambia estados", () => {
     expect(puedeCambiarEstado("Recibida", "Agendada", "solicitante").permitido).toBe(false);
@@ -59,21 +62,55 @@ describe("puedeCambiarEstado", () => {
     ).toBe(false);
   });
 
-  it("no se salta estados", () => {
-    expect(puedeCambiarEstado("Recibida", "Entregada", "comunicaciones").permitido).toBe(false);
+  it("no se entrega sin haber agendado", () => {
+    expect(puedeCambiarEstado("Recibida", "Entrega definitiva", "comunicaciones", envio).permitido).toBe(false);
   });
 
-  it("Entregada exige entregables y confirmación manual", () => {
-    const entregables = [{ tipo: "enlace" as const, descripcion: "Nota web", url: "https://ejemplo.cl" }];
-    expect(puedeCambiarEstado("Agendada", "Entregada", "comunicaciones", {}).permitido).toBe(false);
+  it("producto sin revisión: de Agendada directo a Entrega definitiva", () => {
+    expect(puedeCambiarEstado("Agendada", "Entrega definitiva", "comunicaciones", envio).permitido).toBe(true);
+  });
+
+  it("permite varias rondas de entrega en revisión", () => {
+    expect(puedeCambiarEstado("Agendada", "Entrega en revisión", "comunicaciones", envio).permitido).toBe(true);
     expect(
-      puedeCambiarEstado("Agendada", "Entregada", "comunicaciones", { entregables }).permitido,
-    ).toBe(false);
-    expect(
-      puedeCambiarEstado("Agendada", "Entregada", "comunicaciones", {
-        entregables,
-        entregablesConfirmados: true,
-      }).permitido,
+      puedeCambiarEstado("Entrega en revisión", "Entrega en revisión", "comunicaciones", envio).permitido,
     ).toBe(true);
+    expect(
+      puedeCambiarEstado("Entrega en revisión", "Entrega definitiva", "comunicaciones", envio).permitido,
+    ).toBe(true);
+  });
+
+  it("toda entrega exige entregables y el envío de un integrante del equipo", () => {
+    expect(puedeCambiarEstado("Agendada", "Entrega en revisión", "comunicaciones", {}).permitido).toBe(false);
+    expect(
+      puedeCambiarEstado("Agendada", "Entrega en revisión", "comunicaciones", { entregables }).permitido,
+    ).toBe(false);
+  });
+
+  it("la Entrega definitiva es el final", () => {
+    expect(
+      puedeCambiarEstado("Entrega definitiva", "Entrega en revisión", "comunicaciones", envio).permitido,
+    ).toBe(false);
+  });
+});
+
+describe("aprobarEntrega", () => {
+  it("aprobar en una entrega en revisión cierra como Entrega definitiva", () => {
+    expect(aprobarEntrega("Entrega en revisión", false)).toEqual({
+      permitido: true,
+      nuevoEstado: "Entrega definitiva",
+    });
+  });
+
+  it("se puede aprobar la Entrega definitiva", () => {
+    expect(aprobarEntrega("Entrega definitiva", false).permitido).toBe(true);
+  });
+
+  it("no hay nada que aprobar antes de una entrega", () => {
+    expect(aprobarEntrega("Agendada", false).permitido).toBe(false);
+  });
+
+  it("no se aprueba dos veces", () => {
+    expect(aprobarEntrega("Entrega definitiva", true).permitido).toBe(false);
   });
 });

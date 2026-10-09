@@ -72,12 +72,14 @@ No se ha modificado nada en Monday.
   → Pendiente: límites de tamaño y cantidad; dónde se guardan temporalmente (depende del alojamiento).
 
 - 2026-10-09 — **Se mantiene la aprobación del solicitante.** Marca el éxito de la orden de producción (columna «Aprobación final» de Monday: Pendiente / Aprobada).
-- 2026-10-09 — **Cuatro estados: Recibida, Agendada, Primera entrega, Entrega definitiva.** (Reemplaza la referencia anterior de tres estados.)
+- 2026-10-09 — **Cuatro estados: Recibida, Agendada, Entrega en revisión, Entrega definitiva.** (Reemplaza la referencia anterior de tres estados.) «Entrega en revisión» reemplaza a «Primera entrega» y sirve para cualquier ronda; el número de ronda se indica en la ficha y en el correo.
   - Puede haber varias rondas de entrega (primera, segunda…, definitiva).
   - **Todo** correo de entrega lleva el botón «Apruebo». Al aprobar no se envía otro correo; solo se confirma en pantalla.
   - Si un producto no necesita revisión, no hay primera entrega: se pasa directo a Entrega definitiva.
   - El solicitante no visa entregables. Lo que envía Comunicaciones se da por visado por el equipo.
-  - Pendiente: cómo se nombra el estado durante una segunda o tercera ronda.
+  - Al aprobar, la solicitud queda cerrada como Entrega definitiva.
+  - El visado del equipo es el clic de «Enviar» de un integrante de Comunicaciones, tras ver el correo con sus enlaces y archivos.
+  - Pendiente: renombrar en Monday la etiqueta «Primera entrega» (requiere autorización de José para modificar el tablero).
 
 ## Recursos de marca verificados
 

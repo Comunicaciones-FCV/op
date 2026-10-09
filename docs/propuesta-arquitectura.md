@@ -31,7 +31,7 @@ Estado: **propuesta, no aprobada**. Separa lo acordado de mis recomendaciones.
 | Conversación con el agente | Base de datos de la app | Monday no es para chats; permite retomar y auditar. |
 | Borrador de la solicitud | Base de datos de la app | Un borrador no debe aparecer en el tablero del equipo. |
 | Solicitud confirmada | **Monday** (y copia de respaldo en la app) | Monday es la plataforma operativa del equipo. |
-| Estado (Recibida / Agendada / Entregada) | **Solo Monday** | El equipo lo cambia ahí. La app lo lee, nunca lo decide. |
+| Estado (Recibida / Agendada / Entrega en revisión / Entrega definitiva) y aprobación | **Solo Monday** | El equipo lo cambia ahí. La app lo lee, nunca lo decide. |
 | Productos, responsables, entregables | **Monday** | Trabajo interno del equipo. |
 | Envíos pendientes a Monday o Gmail | Base de datos de la app | Si Monday o Gmail fallan, la solicitud no se pierde y se reintenta. |
 
@@ -66,5 +66,5 @@ Estado: **propuesta, no aprobada**. Separa lo acordado de mis recomendaciones.
 ## 7. Ya implementado y probado (sin depender de cuentas)
 
 - `src/dominio/pauta.ts`: regla de corte jueves 18:00 en hora de Chile → viernes de pauta. 10 pruebas, incluidos cambio de horario invierno/verano y diferencia con la hora UTC.
-- `src/dominio/estados.ts`: Recibida → Agendada → Entregada; solo Comunicaciones cambia; Agendada exige rango; Entregada exige entregables y confirmación manual.
+- `src/dominio/estados.ts`: Recibida → Agendada → Entrega en revisión (rondas) → Entrega definitiva; solo Comunicaciones cambia; Agendada exige rango; toda entrega exige entregables y el envío de un integrante; la aprobación del solicitante cierra la solicitud.
 - `src/dominio/solicitud.ts`: ficha de la solicitud con campos *informado / pendiente / no aplica* y lo mínimo para enviar (clasificación aprobada el 2026-10-09).
