@@ -63,6 +63,8 @@ No se ha modificado nada en Monday.
   → Se ingresa con la cuenta de Google de la Fundación (solo ese dominio). Nombre y correo vienen verificados del ingreso; el agente no los pregunta.
   → Requiere que quien administra el Google de la Fundación autorice la aplicación (pendiente: identificar a esa persona).
 
+- 2026-10-09 — **Sin pantalla «Mis solicitudes».** El solicitante se informa del avance solo por los correos (Recibida, Agendada, Entregada).
+
 ## 5. Recomendaciones aún no aprobadas
 
 - Asistente interno de Comunicaciones dentro de Claude (página publicada que consulta a Claude y lee Monday con las credenciales de cada integrante), para no sumar costo de API. Pendiente de confirmar cómo se descuenta el uso y de aprobación de José.
