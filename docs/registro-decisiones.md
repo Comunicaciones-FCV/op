@@ -68,6 +68,15 @@ No se ha modificado nada en Monday.
 - 2026-10-09 — Mensaje de bienvenida del agente aprobado (ver `docs/agente-recepcion.md`).
 - 2026-10-09 — La pauta de corresponsales («NOTICIA EN …») orienta al agente cuando se cuenta una actividad realizada. Se agrega el campo opcional **Cuña** (texto, nombre, rol), siempre aportado por la persona.
 
+- 2026-10-09 — **Fotos y archivos se suben directo en el chat.** Al confirmar, se envían a la columna «Archivos y antecedentes» de Monday. Mientras la solicitud es borrador, la app los guarda temporalmente. Los enlaces (p. ej. Drive) siguen siendo aceptados como antecedente.
+  → Pendiente: límites de tamaño y cantidad; dónde se guardan temporalmente (depende del alojamiento).
+
+## Recursos de marca verificados
+
+- Logo horizontal a color (`public/marca/fcv-logo-horizontal-color-fondo-transparente.png`, 1000×292, descargado de Drive el 2026-10-09). Muestra panes y peces (no corazones); los corazones 💙🤍💛 aparecen en la firma de WhatsApp.
+- Colores medidos en ese archivo (no son códigos oficiales confirmados): azul #0F5697, azul oscuro #133C68, amarillo #FAB23F, celeste #8FB7E1.
+- Tipografía Neuwelt: carpeta «FF Neuwelt» en Drive (archivos .ttf). Aún no descargada.
+
 ## 5. Recomendaciones aún no aprobadas
 
 - Asistente interno de Comunicaciones dentro de Claude (página publicada que consulta a Claude y lee Monday con las credenciales de cada integrante), para no sumar costo de API. Pendiente de confirmar cómo se descuenta el uso y de aprobación de José.
