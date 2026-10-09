@@ -59,6 +59,10 @@ No se ha modificado nada en Monday.
 - 2026-10-09 — La cuenta de IA se resuelve más adelante, cuando sea necesaria. Mientras tanto se construye sin IA conectada (sin simular un agente).
 - 2026-10-09 — **Obligatorios para enviar:** nombre, correo, área, título y «qué necesita comunicar». El resto puede quedar pendiente o no aplicar. Si aparecen otros obligatorios, se conversan.
 
+- 2026-10-09 — Todos los trabajadores tienen correo institucional de Google (@fundacioncristovive.cl).
+  → Se ingresa con la cuenta de Google de la Fundación (solo ese dominio). Nombre y correo vienen verificados del ingreso; el agente no los pregunta.
+  → Requiere que quien administra el Google de la Fundación autorice la aplicación (pendiente: identificar a esa persona).
+
 ## 5. Recomendaciones aún no aprobadas
 
 - Asistente interno de Comunicaciones dentro de Claude (página publicada que consulta a Claude y lee Monday con las credenciales de cada integrante), para no sumar costo de API. Pendiente de confirmar cómo se descuenta el uso y de aprobación de José.
