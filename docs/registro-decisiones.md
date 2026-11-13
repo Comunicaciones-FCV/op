@@ -83,7 +83,7 @@ No se ha modificado nada en Monday.
 
 ## Registros de prueba en sistemas reales (eliminar al terminar)
 
-- 2026-11-13 — Monday, tablero 18432590576, grupo Deportes: elemento 13548076961 «[PRUEBA] Torneo ficticio de baby fútbol», creado con autorización de José para mostrar cómo se ve una solicitud. Datos ficticios, correo prueba@example.org.
+- 2026-11-13 — Monday, tablero 18432590576, grupo Deportes: elemento 13548076961 «[PRUEBA] Torneo ficticio de baby fútbol», creado con autorización de José para mostrar cómo se ve una solicitud. **Eliminado el 2026-11-13 a pedido de José; tablero verificado vacío.**
 
 ## Recursos de marca verificados
 
