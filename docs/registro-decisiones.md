@@ -81,6 +81,10 @@ No se ha modificado nada en Monday.
   - El visado del equipo es el clic de «Enviar» de un integrante de Comunicaciones, tras ver el correo con sus enlaces y archivos.
   - Pendiente: renombrar en Monday la etiqueta «Primera entrega» (requiere autorización de José para modificar el tablero).
 
+## Registros de prueba en sistemas reales (eliminar al terminar)
+
+- 2026-11-13 — Monday, tablero 18432590576, grupo Deportes: elemento 13548076961 «[PRUEBA] Torneo ficticio de baby fútbol», creado con autorización de José para mostrar cómo se ve una solicitud. Datos ficticios, correo prueba@example.org.
+
 ## Recursos de marca verificados
 
 - Logo horizontal a color (`public/marca/fcv-logo-horizontal-color-fondo-transparente.png`, 1000×292, descargado de Drive el 2026-10-09). Muestra panes y peces (no corazones); los corazones 💙🤍💛 aparecen en la firma de WhatsApp.
